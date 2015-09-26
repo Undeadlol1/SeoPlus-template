@@ -1,0 +1,455 @@
+@import "../bower_components/bootstrap/less/bootstrap.less";
+@icon-font-path: "../fonts/glyphicons/";
+//Шрифты
+@font-face {
+    font-family: Raleway Black;
+    src: url(../fonts/custom/Raleway-Black.ttf);
+}
+
+@font-face {
+    font-family: Raleway Regular;
+    src: url(../fonts/custom/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: Raleway Medium;
+    src: url(../fonts/custom/Raleway-Medium.ttf);
+}
+
+@font-face {
+    font-family: Raleway Bold;
+    src: url(../fonts/custom/Raleway-Bold.ttf);
+}
+
+@font-face {
+    font-family: Raleway SemiBold;
+    src: url(../fonts/custom/Raleway-SemiBold.ttf);
+}
+
+//Общие стили
+@brand-primary: #02c19d;
+.font-size(@sizeValue) {
+    @remValue: @sizeValue;
+    @pxValue: (@sizeValue * 10);
+    font-size: ~"@{pxValue}px";
+    font-size: ~"@{remValue}rem";
+}
+
+.form-control:focus {
+    border-color: #00f0ac;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    //hack for .macbook background
+    overflow-x: hidden;
+}
+
+.gray-bg {
+    background-color: #f0f0f0
+}
+
+.dark-bg {
+    background: #3d3d3d;
+}
+
+h2 {
+    font: 40px Raleway Bold;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: @brand-primary;
+}
+
+header {
+    background: url(../img/background.jpg) top repeat-x;
+    background-size: cover;
+    background-color: #00f0ac;
+    color: #ffffff;
+}
+
+//nav is not nested in the header because footer also has same nav
+nav li {
+    font: 18px Raleway Regular;
+    padding-top: 20px;
+}
+
+nav {
+    button {
+        background-color: black;
+    }
+}
+
+nav a {
+    color: #fff;
+}
+
+.nav > li > a:hover {
+    color: #fff;
+    background-color: #089f74;
+    border-radius: 0 !important;
+}
+
+.navbar-default .navbar-brand {
+    font-size: 60px;
+    font-family: Raleway Black;
+    color: white;
+    margin-top: 15px;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #01755F;
+    background: transparent;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border: none;
+    .navbar-toggle {
+        border: none;
+    }
+    .navbar-toggle:hover {
+        background-color: transparent;
+    }
+}
+
+.navbar-collapse {
+    border: none;
+}
+
+//button to go top
+.gotop {
+    //opacity: 0;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}
+
+button,
+.form-control {
+    border-radius: 0 !important;
+}
+
+
+/* СТИЛИ УЧАСТКОВ */
+
+// каждый участок отмечен уникальным ID 
+#about {
+    h1 {
+        font-family: Raleway Black;
+        .font-size(5);
+        text-transform: uppercase;
+    }
+    p {
+        font: 30px Raleway Regular;
+        margin-bottom: 100px;
+        padding-bottom: 0px;
+    }
+    span {
+        text-transform: uppercase;
+    }
+    i {
+        padding-bottom: 15px;
+    }
+}
+
+#pay {
+    color: #00f0ac;
+    text-align: center;
+    .col-md-4 {
+        border: 1px solid #cbcbcb;
+        margin: 20px auto;
+        border-top: none;
+        border-bottom: none;
+        &:first-child {
+            border-right: none;
+        }
+        &:last-child {
+            border-left: none;
+        }
+    }
+    span {
+        font-family: Arial Black;
+        font-size: 40px;
+        font-weight: bold;
+        border-bottom: 1px solid #cbcbcb;
+    }
+    h2 {
+        font: 18px Raleway Black;
+    }
+    ul {
+        list-style-type: square;
+    }
+    li {
+        font: 16px Raleway Medium;
+        text-align: left;
+        color: #3d3d3d;
+    }
+    .relative {
+        position: relative;
+        height: 300px;
+    }
+    .relative:hover,
+    .active {
+        background: #3d3d3d;
+        cursor: pointer;
+        li {
+            color: white;
+        }
+    }
+    a {
+        font: 16px Raleway Medium;
+        color: #00bbdf;
+        border-bottom: dotted 1px #00bbdf;
+        position: absolute;
+        bottom: 30px;
+        right: 40%;
+    }
+    img {
+        display: none;
+        position: absolute;
+        bottom: -10%;
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+
+#show {
+    text-align: left;
+    color: #3d3d3d;
+    .macbook {
+        margin-top: 15%;
+        margin-left: -30%;
+    }
+    .macbook {
+        margin-top: 15%;
+        margin-left: -30%;
+    }
+    .research {
+        font: 18px PTsans Regular;
+    }
+    span {
+        padding-top: 10px;
+        font: 88px Arial Black;
+        color: #00f0ac;
+        border: none;
+    }
+    h2 {
+        font: 35px Raleway Black;
+        color: #02c19d;
+        border: none;
+    }
+    p {
+        font: 16px Raleway Regular;
+        font-weight: normal;
+    }
+    h3 {
+        font: 35px Raleway Regular;
+    }
+    .number {
+        border-radius: 50%;
+        background: white;
+        height: 85px;
+        width: 85px;
+        display: block;
+        float: left;
+        text-align: center;
+        margin-left: 33%;
+        border: 1px black dashed;
+        margin: 0 auto;
+        top: 50%;
+    }
+    h4 {
+        font: 18px Raleway Bold;
+        color: #3d3d3d;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .steps {
+        p {
+            font: 16px Raleway Regular;
+        }
+    }
+    button {
+        background: @brand-primary;
+        color: white;
+    }
+    button:hover {
+        background-color: #049378;
+    }
+}
+
+#audit {
+    color: #ffffff;
+    text-align: center;
+    p {
+        font: 20px Raleway Regular;
+    }
+}
+
+#faq {
+    ol {
+        list-style: none;
+        counter-reset: step-counter;
+        margin: 0;
+        padding: 0;
+    }
+    ol li {
+        counter-increment: step-counter;
+        padding-bottom: 60px;
+    }
+    ol li:before {
+        content: counter(step-counter)". ";
+        font: 60px Raleway Regular;
+        color: #3d3d3d;
+        display: inline-block;
+    }
+    h3 {
+        font: 40px Raleway SemiBold;
+        color: #00f0ac;
+        text-transform: uppercase;
+        display: inline;
+    }
+}
+
+#contact {
+    background: url(../img/glasses.jpg);
+    color: white;
+    text-align: center;
+    font: 18px Raleway Medium;
+    h2 {
+        font: 40px Raleway Bold;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .phone {
+        font-size: 27px;
+    }
+}
+
+#info {
+    background: #3d3d3d;
+    color: #ffffff;
+    font: 14px Raleway Regular;
+    span {
+        font: 60px Raleway Black;
+    }
+    h3 {
+        font: 18px Raleway Medium;
+    }
+    p {
+        text-align: left;
+    }
+}
+
+//popup modal styles
+#modal {
+    .modal-dialog {
+        .modal-content {
+            border-radius: 0 !important;
+            background: #eaeaea;
+        }
+        position: relative;
+        h2 {
+            text-transform: uppercase;
+            font: 40px Raleway SemiBold;
+            color: black;
+        }
+        span {
+            font: 60px Arial Black;
+            color: #00f0ac;
+        }
+        .btn {
+            font: 30px Raleway Bold;
+        }
+        p {
+            font-size: 16px;
+            font-style: italic;
+        }
+        .selected {
+            font: #00f0ac;
+        }
+        .close span {
+            font-size: 40px;
+            color: #f0f0f0;
+            &:hover {
+                color: @brand-primary;
+            }
+        }
+    }
+}
+
+.close {
+    font-size: 50px;
+    position: absolute;
+    right: -37px;
+    top: -37px;
+    background-color: #3f3f3f !important;
+    opacity: 1 !important;
+    width: 75px;
+    height: 75px;
+    color: white !important;
+    z-index: 2000 !important;
+}
+
+footer {
+    background: #02c19d;
+    p {
+        color: #ffffff;
+        padding: 10px 0;
+        a {
+            text-decoration: underline;
+        }
+    }
+    .navbar {
+        margin-bottom: 0;
+    }
+    nav ul {
+        padding: 5px 0;
+    }
+    nav li {
+        padding: 10px 0;
+    }
+}
+
+//Styles for different screen resolutions
+@media (max-width: @screen-phone) {
+    header {
+        .navbar-default .navbar-brand {
+            .font-size(5);
+        }
+        #about {
+            h1 {
+                .font-size(4);
+                text-align: center;
+            }
+            p {
+                .font-size(2.2);
+                margin-bottom: 30px;
+                text-align: center;
+            }
+            .description {
+                .font-size(1.8);
+                margin-left: 5px;
+            }
+        }
+    }
+    h2 {
+        font-size: 32px;
+    }
+    h3 {
+        font-size: 27px;
+    }
+    footer {
+        nav li {
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+            a {
+                padding: 0 10px;
+            }
+        }
+    }
+}
