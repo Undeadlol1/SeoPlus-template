@@ -26,7 +26,7 @@
     src: url(../fonts/custom/Raleway-SemiBold.ttf);
 }
 
-//Общие стили
+// Main styles
 @brand-primary: #02c19d;
 .font-size(@sizeValue) {
     @remValue: @sizeValue;
@@ -133,9 +133,9 @@ button,
 }
 
 
-/* СТИЛИ УЧАСТКОВ */
+/* SECTION STYLES */
 
-// каждый участок отмечен уникальным ID 
+// every section is marked with ID
 #about {
     h1 {
         font-family: Raleway Black;
@@ -160,14 +160,14 @@ button,
     text-align: center;
     .col-md-4 {
         border: 1px solid #cbcbcb;
-        margin: 20px auto;
+        padding: 20px 15px;
         border-top: none;
         border-bottom: none;
         &:first-child {
-            border-right: none;
+            border: none;
         }
         &:last-child {
-            border-left: none;
+            border: none;
         }
     }
     span {
@@ -187,10 +187,6 @@ button,
         text-align: left;
         color: #3d3d3d;
     }
-    .relative {
-        position: relative;
-        height: 300px;
-    }
     .relative:hover,
     .active {
         background: #3d3d3d;
@@ -203,9 +199,7 @@ button,
         font: 16px Raleway Medium;
         color: #00bbdf;
         border-bottom: dotted 1px #00bbdf;
-        position: absolute;
-        bottom: 30px;
-        right: 40%;
+        text-align: center;
     }
     img {
         display: none;
@@ -449,6 +443,31 @@ footer {
             font-size: 16px;
             a {
                 padding: 0 10px;
+            }
+        }
+    }
+}
+
+@media (min-width: @screen-tablet) {
+    #pay {
+        .relative {
+            height: auto;
+            a {
+                position: static;
+            }
+        }
+    }
+}
+
+@media (min-width: @screen-md-min) {
+    #pay {
+        .relative {
+            position: relative;
+            height: 300px;
+            a {
+                position: absolute;
+                bottom: 30px;
+                right: 40%;
             }
         }
     }

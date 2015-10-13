@@ -6048,7 +6048,7 @@ button,
 .form-control {
   border-radius: 0 !important;
 }
-/* СТИЛИ УЧАСТКОВ */
+/* SECTION STYLES */
 #about h1 {
   font-family: Raleway Black;
   font-size: 50px;
@@ -6072,15 +6072,15 @@ button,
 }
 #pay .col-md-4 {
   border: 1px solid #cbcbcb;
-  margin: 20px auto;
+  padding: 20px 15px;
   border-top: none;
   border-bottom: none;
 }
 #pay .col-md-4:first-child {
-  border-right: none;
+  border: none;
 }
 #pay .col-md-4:last-child {
-  border-left: none;
+  border: none;
 }
 #pay span {
   font-family: Arial Black;
@@ -6099,10 +6099,6 @@ button,
   text-align: left;
   color: #3d3d3d;
 }
-#pay .relative {
-  position: relative;
-  height: 300px;
-}
 #pay .relative:hover,
 #pay .active {
   background: #3d3d3d;
@@ -6116,9 +6112,7 @@ button,
   font: 16px Raleway Medium;
   color: #00bbdf;
   border-bottom: dotted 1px #00bbdf;
-  position: absolute;
-  bottom: 30px;
-  right: 40%;
+  text-align: center;
 }
 #pay img {
   display: none;
@@ -6344,6 +6338,25 @@ footer nav li {
   }
   footer nav li a {
     padding: 0 10px;
+  }
+}
+@media (min-width: 768px) {
+  #pay .relative {
+    height: auto;
+  }
+  #pay .relative a {
+    position: static;
+  }
+}
+@media (min-width: 992px) {
+  #pay .relative {
+    position: relative;
+    height: 300px;
+  }
+  #pay .relative a {
+    position: absolute;
+    bottom: 30px;
+    right: 40%;
   }
 }
 /*# sourceMappingURL=/styles/main.css.map */
