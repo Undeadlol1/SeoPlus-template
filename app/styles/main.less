@@ -1,6 +1,5 @@
 @import "../bower_components/bootstrap/less/bootstrap.less";
-//@icon-font-path: "../fonts/glyphicons/";
-//Шрифты
+// Fonts
 @font-face {
     font-family: Raleway Black;
     src: url(../fonts/custom/Raleway-Black.ttf);
@@ -28,6 +27,7 @@
 
 // Main styles
 @brand-primary: #02c19d;
+// hack for gracefull fallback if browser can't recognise rem values
 .font-size(@sizeValue) {
     @remValue: @sizeValue;
     @pxValue: (@sizeValue * 10);
@@ -40,6 +40,7 @@
 }
 
 html {
+    //default font-size for rem values
     font-size: 62.5%;
 }
 
@@ -57,7 +58,8 @@ body {
 }
 
 h2 {
-    font: 40px Raleway Bold;
+    .font-size(4);
+    font-family: Raleway Bold;
     text-transform: uppercase;
     font-weight: bold;
     color: @brand-primary;
@@ -72,7 +74,8 @@ header {
 
 //nav is not nested in the header because footer also has same nav
 nav li {
-    font: 18px Raleway Regular;
+    .font-size(1.8);
+    font-family: Raleway Regular;
     padding-top: 20px;
 }
 
@@ -93,7 +96,7 @@ nav a {
 }
 
 .navbar-default .navbar-brand {
-    font-size: 60px;
+    .font-size(6.0);
     font-family: Raleway Black;
     color: white;
     margin-top: 15px;
@@ -138,12 +141,13 @@ button,
 // every section is marked with ID
 #about {
     h1 {
-        font-family: Raleway Black;
         .font-size(5);
+        font-family: Raleway Black;
         text-transform: uppercase;
     }
     p {
-        font: 30px Raleway Regular;
+        .font-size(3);
+        font-family: Raleway Regular;
         margin-bottom: 100px;
         padding-bottom: 0px;
     }
@@ -177,13 +181,15 @@ button,
         border-bottom: 1px solid #cbcbcb;
     }
     h2 {
-        font: 18px Raleway Black;
+        .font-size(1.8);
+        font-family: Raleway Black;
     }
     ul {
         list-style-type: square;
     }
     li {
-        font: 16px Raleway Medium;
+        .font-size(1.6);
+        font-family: Raleway Medium;
         text-align: left;
         color: #3d3d3d;
     }
@@ -196,7 +202,8 @@ button,
         }
     }
     a {
-        font: 16px Raleway Medium;
+        .font-size(1.6);
+        font-family: Raleway Medium;
         color: #00bbdf;
         border-bottom: dotted 1px #00bbdf;
         text-align: center;
@@ -222,7 +229,8 @@ button,
         margin-left: -30%;
     }
     .research {
-        font: 18px PTsans Regular;
+        .font-size(1.8);
+        font-family: PTsans Regular;
     }
     span {
         padding-top: 10px;
@@ -231,16 +239,19 @@ button,
         border: none;
     }
     h2 {
-        font: 35px Raleway Black;
+        .font-size(3.5);
+        font-family: Raleway Black;
         color: #02c19d;
         border: none;
     }
     p {
-        font: 16px Raleway Regular;
+        .font-size(1.6);
+        font-family: Raleway Regular;
         font-weight: normal;
     }
     h3 {
-        font: 35px Raleway Regular;
+        .font-size(3.5);
+        font-family: Raleway Regular;
     }
     .number {
         border-radius: 50%;
@@ -256,14 +267,16 @@ button,
         top: 50%;
     }
     h4 {
-        font: 18px Raleway Bold;
+        .font-size(1.8);
+        font-family: Raleway Bold;
         color: #3d3d3d;
         text-transform: uppercase;
         font-weight: bold;
     }
     .steps {
         p {
-            font: 16px Raleway Regular;
+            .font-size(1.6);
+            font-family: 16px Raleway Regular;
         }
     }
     button {
@@ -279,7 +292,8 @@ button,
     color: #ffffff;
     text-align: center;
     p {
-        font: 20px Raleway Regular;
+        .font-size(2);
+        font-family: Raleway Regular;
     }
 }
 
@@ -296,12 +310,14 @@ button,
     }
     ol li:before {
         content: counter(step-counter)". ";
-        font: 60px Raleway Regular;
+        .font-size(6);
+        font-family: Raleway Regular;
         color: #3d3d3d;
         display: inline-block;
     }
     h3 {
-        font: 40px Raleway SemiBold;
+        .font-size(4);
+        font-family: Raleway SemiBold;
         color: #00f0ac;
         text-transform: uppercase;
         display: inline;
@@ -312,26 +328,31 @@ button,
     background: url(../img/glasses.jpg);
     color: white;
     text-align: center;
-    font: 18px Raleway Medium;
+    .font-size(1.8);
+    font-family: Raleway Medium;
     h2 {
-        font: 40px Raleway Bold;
+        .font-size(4);
+        font-family: Raleway Bold;
         text-transform: uppercase;
         font-weight: bold;
     }
     .phone {
-        font-size: 27px;
+        .font-size(2.7);
     }
 }
 
 #info {
     background: #3d3d3d;
     color: #ffffff;
-    font: 14px Raleway Regular;
+    .font-size(1.4);
+    font-family: Raleway Regular;
     span {
-        font: 60px Raleway Black;
+        .font-size(6);
+        font-family: Raleway Black;
     }
     h3 {
-        font: 18px Raleway Medium;
+        .font-size(1.8);
+        font-family: Raleway Medium;
     }
     p {
         text-align: left;
@@ -348,25 +369,28 @@ button,
         position: relative;
         h2 {
             text-transform: uppercase;
-            font: 40px Raleway SemiBold;
+            .font-size(4);
+            font-family: Raleway SemiBold;
             color: black;
         }
         span {
-            font: 60px Arial Black;
+            .font-size(6);
+            font-family: Arial Black;
             color: #00f0ac;
         }
         .btn {
-            font: 30px Raleway Bold;
+            .font-size(3);
+            font-family: Raleway Bold;
         }
         p {
-            font-size: 16px;
+            .font-size(1.6);
             font-style: italic;
         }
         .selected {
             font: #00f0ac;
         }
         .close span {
-            font-size: 40px;
+            .font-size(4);
             color: #f0f0f0;
             &:hover {
                 color: @brand-primary;
@@ -376,7 +400,7 @@ button,
 }
 
 .close {
-    font-size: 50px;
+    .font-size(5);
     position: absolute;
     right: -37px;
     top: -37px;
@@ -431,16 +455,17 @@ footer {
         }
     }
     h2 {
-        font-size: 32px;
+        .font-size(3.2);
     }
     h3 {
+        .font-size(2.7);
         font-size: 27px;
     }
     footer {
         nav li {
             margin: 0;
             padding: 0;
-            font-size: 16px;
+            .font-size(1.6);
             a {
                 padding: 0 10px;
             }
