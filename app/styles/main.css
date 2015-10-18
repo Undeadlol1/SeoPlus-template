@@ -5974,20 +5974,18 @@ td.visible-print {
   font-family: Raleway SemiBold;
   src: url(../fonts/custom/Raleway-SemiBold.ttf);
 }
-.form-control:focus {
-  border-color: #00f0ac;
+/* Main styles */
+.gray-bg {
+  background-color: #f0f0f0;
+}
+.dark-bg {
+  background: #3d3d3d;
 }
 html {
   font-size: 62.5%;
 }
 body {
   overflow-x: hidden;
-}
-.gray-bg {
-  background-color: #f0f0f0;
-}
-.dark-bg {
-  background: #3d3d3d;
 }
 h2 {
   font-size: 40px;
@@ -5997,6 +5995,14 @@ h2 {
   font-weight: bold;
   color: #02c19d;
 }
+.form-control:focus {
+  border-color: #00f0ac;
+}
+button,
+.form-control {
+  border-radius: 0 !important;
+}
+/* SECTION STYLES */
 header {
   background: url(../img/background.jpg) top repeat-x;
   background-size: cover;
@@ -6044,16 +6050,6 @@ nav a {
 .navbar-collapse {
   border: none;
 }
-.gotop {
-  position: fixed;
-  bottom: 40px;
-  right: 40px;
-}
-button,
-.form-control {
-  border-radius: 0 !important;
-}
-/* SECTION STYLES */
 #about h1 {
   font-size: 50px;
   font-size: 5rem;
@@ -6137,10 +6133,6 @@ button,
 #show {
   text-align: left;
   color: #3d3d3d;
-}
-#show .macbook {
-  margin-top: 15%;
-  margin-left: -30%;
 }
 #show .macbook {
   margin-top: 15%;
@@ -6282,6 +6274,11 @@ button,
 #info p {
   text-align: left;
 }
+.gotop {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}
 #modal .modal-dialog {
   position: relative;
 }
@@ -6315,6 +6312,18 @@ button,
 #modal .modal-dialog .selected {
   font: #00f0ac;
 }
+#modal .modal-dialog .close {
+  font-size: 50px;
+  font-size: 5rem;
+  position: absolute;
+  right: -37px;
+  top: -37px;
+  background-color: #3f3f3f !important;
+  opacity: 1;
+  width: 75px;
+  height: 75px;
+  color: white;
+}
 #modal .modal-dialog .close span {
   font-size: 40px;
   font-size: 4rem;
@@ -6322,19 +6331,6 @@ button,
 }
 #modal .modal-dialog .close span:hover {
   color: #02c19d;
-}
-.close {
-  font-size: 50px;
-  font-size: 5rem;
-  position: absolute;
-  right: -37px;
-  top: -37px;
-  background-color: #3f3f3f !important;
-  opacity: 1 !important;
-  width: 75px;
-  height: 75px;
-  color: white !important;
-  z-index: 2000 !important;
 }
 footer {
   background: #02c19d;
