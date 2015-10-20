@@ -5955,23 +5955,23 @@ td.visible-print {
   }
 }
 @font-face {
-  font-family: Raleway Black;
+  font-family: RalewayBlack;
   src: url(../fonts/custom/Raleway-Black.ttf);
 }
 @font-face {
-  font-family: Raleway Regular;
+  font-family: RalewayRegular;
   src: url(../fonts/custom/Raleway-Regular.ttf);
 }
 @font-face {
-  font-family: Raleway Medium;
+  font-family: RalewayMedium;
   src: url(../fonts/custom/Raleway-Medium.ttf);
 }
 @font-face {
-  font-family: Raleway Bold;
+  font-family: RalewayBold;
   src: url(../fonts/custom/Raleway-Bold.ttf);
 }
 @font-face {
-  font-family: Raleway SemiBold;
+  font-family: RalewaySemiBold;
   src: url(../fonts/custom/Raleway-SemiBold.ttf);
 }
 /* Main styles */
@@ -5990,7 +5990,7 @@ body {
 h2 {
   font-size: 40px;
   font-size: 4rem;
-  font-family: Raleway Bold;
+  font-family: RalewayBold;
   text-transform: uppercase;
   font-weight: bold;
   color: #02c19d;
@@ -6012,7 +6012,7 @@ header {
 nav li {
   font-size: 18px;
   font-size: 1.8rem;
-  font-family: Raleway Regular;
+  font-family: RalewayRegular;
   padding-top: 20px;
 }
 nav button {
@@ -6029,7 +6029,7 @@ nav a {
 .navbar-default .navbar-brand {
   font-size: 60px;
   font-size: 6rem;
-  font-family: Raleway Black;
+  font-family: RalewayBlack;
   color: white;
   margin-top: 15px;
 }
@@ -6053,13 +6053,13 @@ nav a {
 #about h1 {
   font-size: 50px;
   font-size: 5rem;
-  font-family: Raleway Black;
+  font-family: RalewayBlack;
   text-transform: uppercase;
 }
 #about p {
   font-size: 30px;
   font-size: 3rem;
-  font-family: Raleway Regular;
+  font-family: RalewayRegular;
   margin-bottom: 100px;
   padding-bottom: 0px;
 }
@@ -6094,7 +6094,7 @@ nav a {
 #pay h2 {
   font-size: 18px;
   font-size: 1.8rem;
-  font-family: Raleway Black;
+  font-family: RalewayBlack;
 }
 #pay ul {
   list-style-type: square;
@@ -6102,7 +6102,7 @@ nav a {
 #pay li {
   font-size: 16px;
   font-size: 1.6rem;
-  font-family: Raleway Medium;
+  font-family: RalewayMedium;
   text-align: left;
   color: #3d3d3d;
 }
@@ -6118,7 +6118,7 @@ nav a {
 #pay a {
   font-size: 16px;
   font-size: 1.6rem;
-  font-family: Raleway Medium;
+  font-family: RalewayMedium;
   color: #00bbdf;
   border-bottom: dotted 1px #00bbdf;
   text-align: center;
@@ -6152,20 +6152,20 @@ nav a {
 #show h2 {
   font-size: 35px;
   font-size: 3.5rem;
-  font-family: Raleway Black;
+  font-family: RalewayBlack;
   color: #02c19d;
   border: none;
 }
 #show p {
   font-size: 16px;
   font-size: 1.6rem;
-  font-family: Raleway Regular;
+  font-family: RalewayRegular;
   font-weight: normal;
 }
 #show h3 {
   font-size: 35px;
   font-size: 3.5rem;
-  font-family: Raleway Regular;
+  font-family: RalewayRegular;
 }
 #show .number {
   border-radius: 50%;
@@ -6183,7 +6183,7 @@ nav a {
 #show h4 {
   font-size: 18px;
   font-size: 1.8rem;
-  font-family: Raleway Bold;
+  font-family: RalewayBold;
   color: #3d3d3d;
   text-transform: uppercase;
   font-weight: bold;
@@ -6191,7 +6191,7 @@ nav a {
 #show .steps p {
   font-size: 16px;
   font-size: 1.6rem;
-  font-family: 16px Raleway Regular;
+  font-family: 16px RalewayRegular;
 }
 #show button {
   background: #02c19d;
@@ -6207,7 +6207,7 @@ nav a {
 #audit p {
   font-size: 20px;
   font-size: 2rem;
-  font-family: Raleway Regular;
+  font-family: RalewayRegular;
 }
 #faq ol {
   list-style: none;
@@ -6223,14 +6223,14 @@ nav a {
   content: counter(step-counter) ". ";
   font-size: 60px;
   font-size: 6rem;
-  font-family: Raleway Regular;
+  font-family: RalewayRegular;
   color: #3d3d3d;
   display: inline-block;
 }
 #faq h3 {
   font-size: 40px;
   font-size: 4rem;
-  font-family: Raleway SemiBold;
+  font-family: RalewaySemiBold;
   color: #00f0ac;
   text-transform: uppercase;
   display: inline;
@@ -6241,12 +6241,12 @@ nav a {
   text-align: center;
   font-size: 18px;
   font-size: 1.8rem;
-  font-family: Raleway Medium;
+  font-family: RalewayMedium;
 }
 #contact h2 {
   font-size: 40px;
   font-size: 4rem;
-  font-family: Raleway Bold;
+  font-family: RalewayBold;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -6259,17 +6259,17 @@ nav a {
   color: #ffffff;
   font-size: 14px;
   font-size: 1.4rem;
-  font-family: Raleway Regular;
+  font-family: RalewayRegular;
 }
 #info span {
   font-size: 60px;
   font-size: 6rem;
-  font-family: Raleway Black;
+  font-family: RalewayBlack;
 }
 #info h3 {
   font-size: 18px;
   font-size: 1.8rem;
-  font-family: Raleway Medium;
+  font-family: RalewayMedium;
 }
 #info p {
   text-align: left;
@@ -6290,7 +6290,7 @@ nav a {
   text-transform: uppercase;
   font-size: 40px;
   font-size: 4rem;
-  font-family: Raleway SemiBold;
+  font-family: RalewaySemiBold;
   color: black;
 }
 #modal .modal-dialog span {
@@ -6302,7 +6302,7 @@ nav a {
 #modal .modal-dialog .btn {
   font-size: 30px;
   font-size: 3rem;
-  font-family: Raleway Bold;
+  font-family: RalewayBold;
 }
 #modal .modal-dialog p {
   font-size: 16px;
